@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import DateTime from './DateTime/'
-// import Survey from './Survey/'
+// import DateTime from './DateTime/'
+// import Quiz from './Quiz/'
+import Recipe from './Recipe'
 
 // TODO: use a Router to show each one
 
@@ -10,8 +11,9 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<DateTime />
-				{/* <Survey /> */}
+				{/* <DateTime /> */}
+				{/* <Quiz /> */}
+				<Recipe />
 			</div>
 		)
 	}
