@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    /* background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
+    background-color: #f1f2f6;
+    background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+
+font-family: 'Quicksand', sans-serif;
+
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    /* so bottom is still rounded */
+    /* https://markheath.net/post/keep-inside-rounded-corners-css */
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+}
+
+.main {
+    padding: 4rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 1.5rem 0;
+}
+
+button {
+    background-color: #5f27cd;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: #784ecc;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+/* custom radio */
+
+/* hide browser's default */
+.custom-radio {
+    position: relative;
+    cursor: pointer;
+    padding-left: 2.5rem; /* space between custom input and string */
+    user-select: none;
+
+    /* center label with custom radio */
+    padding-top: 2px;
+}
+
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio:hover input ~ .checkmark {
+    background-color: gray;
+}
+
+/* custom radio button */
+.custom-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.custom-radio input:checked ~ .checkmark {
+    background-color: blue;
+}
+
+/* dot in the middle */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/**************************/
