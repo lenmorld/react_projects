@@ -75,8 +75,13 @@ export default function Recipe() {
         let faves = []
 
         if (localStorage.length) {
-            faves = Object.values(localStorage).map(entry => JSON.parse(entry));
-            setFavorites(faves)
+            try {
+                faves = Object.values(localStorage).map((entry) => JSON.parse(entry));
+                setFavorites(faves);
+            } catch (e) {
+                console.error(e);
+                setFavorites([]);
+            }
         }
 
         // get featured recipes
