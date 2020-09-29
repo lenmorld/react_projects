@@ -27,9 +27,7 @@ ul.favorite-recipe-grid, ul.recipe-grid , ul.featured-grid{
 }
 
 .container {
-    /* border: 1px solid red; */
-
-    /* toggle for a mobile look */
+    /***** toggle for a mobile look *****/
     /* width: 400px; */
 
     background-color: white;
